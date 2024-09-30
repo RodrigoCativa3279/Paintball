@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.hero-image {
+    position: relative; /* Para que el texto se posicione sobre la imagen */
+    text-align: center; /* Centra el texto */
+
+}
+
+.main-image {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: 500px; /* Mantiene la relación de aspecto */
+}
+
+.hero-text {
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: 40%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para que esté realmente centrado */
+    color: white; /* Color del texto */
+    font-size: 3em; /* Tamaño de fuente ajustable */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la visibilidad */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white; /* El texto del menú será blanco */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background-color: gray; /* Color de fondo al pasar el cursor por encima */
+    color: #f1f1f1; /* Cambia el color del texto al pasar el cursor */
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    color: #333;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+    color: black;
+}
+
+.dropdown-content li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.somos-section {
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.925); /* Cambia esto al color que uses en el nav */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 40px 20px; /* Espaciado alrededor */
+}
+
+.somos-info {
+    margin: 20px 0; /* Espaciado entre el texto y el botón */
+}
+
+.btn-ver-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color del fondo del botón */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+.mi-reserva-section {
+    background-color: rgba(0, 0, 0, 0.925); /* Mismo color que el nav y sucursales */
+    color: white;
+    text-align: center;
+    padding: 40px 40px;
+    margin-top: 0px; /* Un poco de espacio entre las secciones */
+}
+
+.mi-reserva-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.mi-reserva-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.mi-reserva-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mi-reserva-actions a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.mi-reserva-actions a:hover {
+    background-color: #0056b3;
+}
+
+
+.btn-ver-mas:hover {
+    background-color: #033264; /* Color de fondo al pasar el mouse */
+}
+.faq-section {
+    background-color: #333; /* Color de fondo claro */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado alrededor */
+    text-align: center; /* Centra el texto */
+}
+
+.faq-item {
+    margin: 20px 0; /* Espaciado entre las preguntas */
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.faq-item h3 {
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+    color:white; /* Color del texto de las preguntas */
+}
+
+.faq-item p {
+    display: none; /* Oculta las respuestas inicialmente */
+}
+
+.faq-item.active p {
+    display: block; /* Muestra la respuesta si el item está activo */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Añade al final de styles.css */
+nav ul li.dropdown-country {
+    float: right; /* Alinea a la derecha */
+    position: relative;
+}
+
+.country-toggle {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 20px; /* Ajusta el tamaño de la bandera */
+    height: auto;
+    margin-right: 5px;
+}
+
+.dropdown-country .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-country:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-country .dropdown-content li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-country .dropdown-content li a {
+    display: block;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-country .dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+/* Añade al final de styles.css */
+.dropdown-country {
+    display: inline-flex; /* Cambiado a inline-flex */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Necesario para el menú desplegable */
+    margin-left: 10px; /* Espaciado opcional */
+}
+
+.country-dropdown-content {
+    display: none;
+    position: absolute; /* Mantenerlo absoluto para que no se superponga */
+    top: 100%; /* Posiciona debajo del elemento */
+    left: 0; /* Alinea a la izquierda */
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.country-dropdown-content li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.country-dropdown-content li a {
+    color: black;
+    text-decoration: none;
+}
+
+.country-dropdown-content li.message {
+    text-align: center;
+    color: gray; /* Color del mensaje */
+    padding: 10px 0;
+}
+
+.country-toggle {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 20px; /* Ajusta el tamaño de la bandera */
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle; /* Alinea verticalmente */
+}
+
+.dropdown-country:hover .country-dropdown-content,
+.country-dropdown-content.active {
+    display: block; /* Muestra el dropdown al pasar el mouse */
+}
+
+.map-container {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.map-item {
+    text-align: center; /* Centra el texto debajo de cada mapa */
+    margin-bottom: 20px; /* Añade espacio entre los items */
+    border: rgb(207, 219, 219) solid;
+    border-radius: 10%;
+    padding: 10px; /* Añade padding al contenedor para separar el contenido del borde */
+}
+
+iframe {
+    width: calc(100% + 20px); /* Aumenta el ancho del iframe */
+    max-width: 270px; /* Aumenta el max-width para que se ajuste mejor */
+    height: 200px;
+    border: solid gray;
+    border-radius: 5%;
+    margin-left: -10px; /* Desplaza el iframe a la izquierda para compensar el padding */
+}
+
+.map-item p {
+    width: 100%;
+    margin-top: 20px; /* Espacio entre el mapa y el texto */
+    font-size: large; /* Tamaño del texto debajo del mapa */
+    color: white; /* Color blanco para que combine con el diseño */
+    padding: 0 10px; /* Añade padding lateral al texto para separarlo del margen */
+}
+.section {
+    margin: 0;
+    padding: 80px 0;
+    background-image: url('imagenes/mi-imagen.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 50px; /* Ajusta según sea necesario */
+}
+.info-blocks {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px; /* Aumenta el padding */
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+.info-block {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white; /
+    padding: 20px; 
+    border-radius: 10px; 
+    width: 30%; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s; 
+    margin-top: -50px;
+}
+
+.info-block:hover {
+    transform: translateY(-5px); 
+}
+
+.info-block h3 {
+    margin: 10px 0;
+    font-size: 1.5em; 
+    color: #007BFF; 
+}
+
+.info-block p {
+    font-size: 1.3em; 
+    line-height: 1.6; 
+}

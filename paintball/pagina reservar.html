@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA</title>
+    <link rel="stylesheet" href="diseño reservar.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Reservar</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Seleccionado de reserva</h2>
+            <div class="sedes-container">
+                <div class="sede">
+                    <img src="cancha 1.jpeg" alt="Sede 1">
+                    <p class="precio">Cancha de la sede 1 - Precio por persona: 50$</p>
+                </div>
+                <div class="sede">
+                    <img src="cancha 2.jpeg" alt="Sede 2">
+                    <p class="precio">Cancha de la sede 2 - Precio por persona: 40$</p>
+                </div>
+                <div class="sede">
+                    <img src="cancha 3.jpeg" alt="Sede 3">
+                    <p class="precio">Cancha de la sede 3 - Precio por persona: 30$</p>
+                </div>
+                <div class="sede">
+                    <img src="cancha 4.jpeg" alt="Sede 4">
+                    <p class="precio">Cancha de la sede 4 - Precio por persona: 30$</p>
+                </div>
+                <div class="sede">
+                    <img src="cancha 5.jpeg" alt="Sede 5">
+                    <p class="precio">Cancha de la sede 5 - Precio por persona: 50$</p>
+                </div>
+                <div class="sede">
+                    <img src="cancha 6.jpeg" alt="Sede 6">
+                    <p class="precio">Cancha de la sede 6 - Precio por persona: 40$</p>
+                </div>
+                <div class="sede">
+                    <img src="cancha 7.jpeg" alt="Sede 7">
+                    <p class="precio">Cancha de la sede 7 - Precio por persona: 50$</p>
+                </div>
+            </div>
+            <button id="ver-sedes-btn" onclick="location.href='sedes.html'">Ver Sedes</button>
+        </div>
+
+        <h3>Selecciona tu sede:</h3>
+        <select id="seleccion-cancha" class="cancha-select">
+            <option value="sede1">Sede 1</option>
+            <option value="sede2">Sede 2</option>
+            <option value="sede3">Sede 3</option>
+            <option value="sede4">Sede 4</option>
+            <option value="sede5">Sede 5</option>
+            <option value="sede6">Sede 6</option>
+            <option value="sede7">Sede 7</option>
+        </select>
+
+        <h3>Selecciona la fecha de tu reserva:</h3>
+        <input type="date" id="fecha-reserva" class="fecha-select">
+
+        <h2>Perfecto. Una vez seleccionada la sede, elige un horario en el cual deseas reservar</h2>
+        <div class="time-selection">
+            <input type="radio" id="hora-11" name="horario" value="11:00 AM" class="time-box" required>
+            <label for="hora-11" class="time-box">11:00 AM</label>
+
+            <input type="radio" id="hora-12" name="horario" value="12:00 PM" class="time-box">
+            <label for="hora-12" class="time-box">12:00 PM</label>
+
+            <input type="radio" id="hora-13" name="horario" value="1:00 PM" class="time-box">
+            <label for="hora-13" class="time-box">13:00 PM</label>
+
+            <input type="radio" id="hora-14" name="horario" value="2:00 PM" class="time-box">
+            <label for="hora-14" class="time-box">14:00 PM</label>
+
+            <input type="radio" id="hora-15" name="horario" value="3:00 PM" class="time-box">
+            <label for="hora-15" class="time-box">15:00 PM</label>
+
+            <input type="radio" id="hora-16" name="horario" value="4:00 PM" class="time-box">
+            <label for="hora-16" class="time-box">16:00 PM</label>
+
+            <input type="radio" id="hora-17" name="horario" value="5:00 PM" class="time-box">
+            <label for="hora-17" class="time-box">17:00 PM</label>
+
+            <input type="radio" id="hora-18" name="horario" value="6:00 PM" class="time-box">
+            <label for="hora-18" class="time-box">18:00 PM</label>
+
+            <input type="radio" id="hora-19" name="horario" value="7:00 PM" class="time-box">
+            <label for="hora-19" class="time-box">19:00 PM</label>
+
+            <input type="radio" id="hora-20" name="horario" value="8:00 PM" class="time-box">
+            <label for="hora-20" class="time-box">20:00 PM</label>
+        </div>
+
+        <input type="submit" value="RESERVAR" id="reservar-btn">
+
+    </main>
+
+    <script src="reservar.js"></script>
+
+</body>
+
+</html>
+
